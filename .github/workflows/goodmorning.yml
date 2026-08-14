@@ -8,7 +8,7 @@ sync:
 runs-on: ubuntu-latest
 steps:
 - name: Call Supabase Edge Function
-run: |
+run:|
 curl -X POST "https://mtlcyzkrxkfybhyymvqc.supabase.co/functions/v1/pixabay-sync" 
 -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" 
 -H "Content-Type: application/json"
